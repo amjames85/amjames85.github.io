@@ -1,0 +1,160 @@
+{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+	position:relative;
+	display:block;
+	height:30px;
+	font-size:12px;
+	font-weight:bold;
+	background:transparent url(nav_bg.png) repeat-x top left;
+	font-family:Arial, Helvetica, sans-serif;
+	border-bottom:1px solid #000000;
+	border-top:1px solid #000000;
+}
+
+#cssmenu li
+{
+	display: block;
+	float: left;
+	margin-left: 15px;
+	padding:0;
+	margin-right: 15px;
+}
+	
+#cssmenu li a
+{
+	display:block;
+	float:left;
+	color:#999999;
+	text-decoration:none;
+	font-weight:bold;
+	padding:8px 20px 0 20px;
+}
+	
+#cssmenu li a:hover
+{	
+	color:#FFFFFF;
+	height:22px;
+	background:transparent url(nav_bg.png) 0px -30px no-repeat;		
+}
+	
+
+#cssmenu li.active a
+{
+	display:inline;
+	height:22px;
+	background:transparent url(nav_bg.png) 0px -30px no-repeat;	
+	float:left;
+	margin:0;
+}
+
+.tabs {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	position:relative;
+	text-align: center;
+	
+}
+/*--- this sections takes care of the 4 tabs.
+text align centers the tabs on the page 
+list-style:none, removes bullet 
+
+*/
+
+
+.tabs {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	position:relative;
+	text-align: center;
+	
+}
+#borderimg { 
+    -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(border.png) 30 round;
+}
+
+/*--- if you remove just the FONT code and leave padding from below, the tab would be different. They would be so far away
+
+Tabs li helps us to format within the above tab
+
+*/
+
+.tabs li {
+  display: inline;
+  <font color="red" padding-right: 50px;>
+	
+}
+
+
+
+
+.tabs li > input{
+	display:none;
+}
+
+/*--- color black gives black color on tab text; border bottom/top implies  line on top and bottom of the tab:
+
+border-bottom:5px solid #000000;
+	border-top:5px solid #000000;
+*/
+
+.tabs li > label {
+	display:inline-block;
+		
+		height:30px;
+	line-height:30px;
+	padding:10px 30px;
+	cursor:pointer;
+			color: black;
+		 
+}
+
+
+
+/*--- text-align puts our paragraph within each text to left */
+
+.tabs .tab-content{
+	display:none;
+		position:absolute;
+	text-align: center;
+	
+}
+
+
+
+.tabs li> input:checked + label {
+	background-color:#42f4f1;
+}
+	
+.tabs li > input:checked ~ .tab-content {
+	display:block;
+}	
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+<!--
+.tab { margin-left: 100px; }
+-->
+
+
+
+
