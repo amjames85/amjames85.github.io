@@ -87,7 +87,7 @@ Tabs li helps us to format within the above tab
 
 .tabs li {
   display: inline;
-  <font color="red" padding-right: 50px;>
+  <font color: red, padding-right: 50px;>
 	
 }
 
@@ -135,6 +135,9 @@ border-bottom:5px solid #000000;
 .tabs li > input:checked ~ .tab-content {
 	display:block;
 }	
+
+
+
 
 table {
     font-family: arial, sans-serif;
