@@ -1,18 +1,9 @@
-.tabs {
-	list-style-type: none;
-	padding:0;
-	margin:0;
-	position:relative;
-	text-align: center;
-	
-}
 /*--- this sections takes care of the 4 tabs.
 text align centers the tabs on the page 
 list-style:none, removes bullet 
 
 */
 
-
 .tabs {
 	list-style-type: none;
 	padding:0;
@@ -21,11 +12,7 @@ list-style:none, removes bullet
 	text-align: center;
 	
 }
-#borderimg { 
-    -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
-    border-image: url(border.png) 30 round;
-}
+
 
 /*--- if you remove just the FONT code and leave padding from below, the tab would be different. They would be so far away
 
@@ -35,7 +22,7 @@ Tabs li helps us to format within the above tab
 
 .tabs li {
   display: inline;
-  <font color: red, padding-right: 50px;>
+  <font color='"Red"'>padding-right: 50px;</font>
 	
 }
 
@@ -53,7 +40,7 @@ border-bottom:5px solid #000000;
 */
 
 .tabs li > label {
-	display:inline-block;
+	display.inline-block;
 		
 		height:30px;
 	line-height:30px;
@@ -65,27 +52,36 @@ border-bottom:5px solid #000000;
 
 
 
-/*--- text-align puts our paragraph within each text to left */
+/*--- text-align puts our paragraph within each text to left 
+Margin left gives my paragraph certain 'cm' away from left
+*/
 
 .tabs .tab-content{
 	display:none;
 		position:absolute;
-	text-align: center;
+	text-align: justify;
+	margin-left: 7cm;
+	margin-right: 7cm;
 	
 }
 
 
 
+/*--- Instead of just color in the code below, we can do background-color:#5BC85B, to get box green (instead of just text
+green) when tab is selected*/
+
 .tabs li> input:checked + label {
-	background-color:#42f4f1;
+	color:red;
 }
 	
 .tabs li > input:checked ~ .tab-content {
 	display:block;
 }	
 
-
-
+/*--- We have the following code because in HTML we have img as circle */
+.img-circle {
+    border-radius: 50%;
+}
 
 table {
     font-family: Centaur, sans-serif;
@@ -102,13 +98,57 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
-<!--
-.tab { margin-left: 100px; }
--->
-.img-circle {
-    border-radius: 50%;
+/*--- We have the following code because in HTML we used box in Reviews section
+
+Height increases height; widht increase width of box; padding increases where to start text*/
+.boxreview {
+  width: 700px;
+    height: 100px;
+	background: url(mark.jpg) no-repeat transparent;
+	padding: 3px;
+	background-size: 15px 15px;    
+    
+    text-align: left;
+	     border: 1px solid maroon;
 }
 
+/*--- I have footer code in html and the following code accompnys that */
+
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+    text-align: center;
+}
+
+.input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Continuing from above footer ---When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+p.search {
+    margin-right: 7cm;
+}
+
+
+/* Following code is for the HTML code for DIV side by side in Contacts. We can put border around it. border:1px solid red; But I decided not to*/
+#parent_div_1, #parent_div_2, #parent_div_3{
+    width:200px;
+    height:100px;
+        margin-right:7px;
+	    float:left;
+}
+.child_div_1{
+    float:left;
+	    }
 
 
 
