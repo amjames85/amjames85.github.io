@@ -149,6 +149,7 @@ p.search {
 .child_div_1{
     float:left;
 	    }
+
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
